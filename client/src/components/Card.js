@@ -21,7 +21,7 @@ function Card() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/tech")
+      .get("https://emptycup-project-1.onrender.com/tech")
       .then((res) => {
         setData(res.data);
         setVisibleCards(Array(res.data.length).fill(true));

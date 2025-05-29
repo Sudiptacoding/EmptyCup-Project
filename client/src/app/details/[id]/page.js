@@ -15,7 +15,7 @@ const DetailPage = () => {
   useEffect(() => {
     if (id) {
       setLoading(true);
-      fetch(`http://localhost:5000/tech/${id}`)
+      fetch(`https://emptycup-project-1.onrender.com/tech/${id}`)
         .then((res) => {
           if (!res.ok) {
             throw new Error("Failed to fetch data");
